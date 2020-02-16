@@ -5,5 +5,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="red">#ee0000</color>
     <color name="peach">#fdd3c9</color>
-
+    <color name="lightGreen">#bada55</color>
+    <color name="purple">#6c78d8</color>
+    <color name="lavendar">#e6e6fa</color>
+    <color name="pastelGreen">#dcedc1</color>
 </resources>
