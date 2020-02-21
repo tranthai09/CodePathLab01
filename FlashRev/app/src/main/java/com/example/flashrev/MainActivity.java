@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    boolean isShowingAnswers;
+    private boolean isShowingAnswers = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //toggle back and forth to show and hide answer choices
         findViewById(R.id.toggle_choices_visibility).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,24 +63,15 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(R.id.flashcard_answer1).setVisibility(View.INVISIBLE);
                     findViewById(R.id.flashcard_answer2).setVisibility(View.INVISIBLE);
                     findViewById(R.id.flashcard_correctAnswer).setVisibility(View.INVISIBLE);
+                    isShowingAnswers = true;
                 }
-                //isShowingAnswers = true;
-
-            }
-        });
-
-        findViewById(R.id.toggle_choices_invisibility).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isShowingAnswers){
-                    findViewById(R.id.toggle_choices_visibility).setVisibility(View.INVISIBLE);
-                    ((ImageView) findViewById(R.id.toggle_choices_invisibility)).setImageResource(R.drawable.closed_eye);
-
+                else {
+                    ((ImageView) findViewById(R.id.toggle_choices_visibility)).setImageResource(R.drawable.closed_eye);
                     findViewById(R.id.flashcard_answer1).setVisibility(View.VISIBLE);
                     findViewById(R.id.flashcard_answer2).setVisibility(View.VISIBLE);
                     findViewById(R.id.flashcard_correctAnswer).setVisibility(View.VISIBLE);
+                    isShowingAnswers = false;
                 }
-
 
             }
         });
