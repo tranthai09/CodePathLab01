@@ -1,19 +1,13 @@
 # CodePathLab01
 ## FlashRev
 
-📝 `NOTE:` Paste the README templates for each subsequent lab here at the top, (i.e. lab 2, 3, 4). This will show a history of your development process including which users tories you completed and how your app looked and functioned at each step.
-
 ## Lab 1
 
 ### App Description
-`TODO://` Add app description
+Basic flashcard app where the user can flip the flash card back and forth to reveal and hide the answer to a question. The user can also choose between three answer choices and quiz themselves on the question as well as toggle between showing and hiding the answer choices. When the user clicks on the correct answer, it will turn green. If the user clicks on the wrong answer, the correct answer will turn green and the user's answer will turn red. 
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
-
-<img src="YOUR_GIF_URL_HERE" width=200><br>
-
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
+<img src="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gifE" width=200><br>
 
 ## Required
 - [x] Create New Project in Android Studio
