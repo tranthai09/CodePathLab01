@@ -7,8 +7,9 @@
 Basic flashcard app where the user can flip the flash card back and forth to reveal and hide the answer to a question. The user can also choose between three answer choices and quiz themselves on the question as well as toggle between showing and hiding the answer choices. When the user clicks on the correct answer, it will turn green. If the user clicks on the wrong answer, the correct answer will turn green and the user's answer will turn red. 
 
 ### App Walk-though
-<img src="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gifE" width=200><br>
-<a href="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gifE"><img src="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gifE"/></a> <br>
+<img src="" width=200><br>
+![](https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gifE)
+
 
 ## Required
 - [x] Create New Project in Android Studio
