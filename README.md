@@ -8,7 +8,7 @@ Basic flashcard app where the user can flip the flash card back and forth to rev
 
 ### App Walk-though
 <img src="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gifE" width=200><br>
-<a href="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gifE"><img src="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gifE" title="source: imgur.com" /></a> <br>
+<a href="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gifE"><img src="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gifE"/></a> <br>
 
 ## Required
 - [x] Create New Project in Android Studio
