@@ -83,5 +83,22 @@
         android:textColor="#000000"
         android:textSize="40sp" />
 
+    <ImageView
+        android:id="@+id/toggle_choices_visibility"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/closed_eye" />
+    <ImageView
+        android:id="@+id/toggle_choices_invisibility"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:src="@drawable/open_eye" />
+
+
 
 </RelativeLayout>
