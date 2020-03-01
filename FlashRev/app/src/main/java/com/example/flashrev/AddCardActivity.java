@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -36,6 +37,12 @@ public class AddCardActivity extends AppCompatActivity {
                 finish(); // closes this activity and pass data to the original activity that launched this activity
             }
         });
+
+        String q = getIntent().getStringExtra("stringKey1"); // this string will be 'harry potter`
+        String a1 = getIntent().getStringExtra("stringKey2"); // this string will be 'voldemort'
+        ((TextView) findViewById(R.id.editQuestion)).setText((q));
+        ((TextView) findViewById(R.id.editAnswer)).setText((a1));
+
 
     }
 

@@ -88,6 +88,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.editBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView q = findViewById(R.id.flashcard_question);
+                String question = q.getText().toString();
+                TextView a = findViewById(R.id.flashcard_answer);
+                String answer = a.getText().toString();
+
+                Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
+                //MainActivity.this.startActivity(intent);
+                intent.putExtra("stringKey1", question);
+                intent.putExtra("stringKey2", answer);
+                MainActivity.this.startActivityForResult(intent, 100);
+            }
+        });
+
+
     }
 
     @Override
@@ -117,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.flashcard_question)).setText((question));
             ((TextView) findViewById(R.id.flashcard_answer)).setText((answer));
         }
+
 
 
     }
