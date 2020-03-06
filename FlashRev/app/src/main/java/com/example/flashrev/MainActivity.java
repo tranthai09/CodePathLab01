@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -95,11 +97,18 @@ public class MainActivity extends AppCompatActivity {
                 String question = q.getText().toString();
                 TextView a = findViewById(R.id.flashcard_answer);
                 String answer = a.getText().toString();
+                TextView a2 = findViewById(R.id.flashcard_answer1);
+                String answer2 = a2.getText().toString();
+                TextView a3 = findViewById(R.id.flashcard_answer2);
+                String answer3 = a3.getText().toString();
+
 
                 Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
                 //MainActivity.this.startActivity(intent);
                 intent.putExtra("stringKey1", question);
                 intent.putExtra("stringKey2", answer);
+                intent.putExtra("stringKey3", answer2);
+                intent.putExtra("stringKey4", answer3);
                 MainActivity.this.startActivityForResult(intent, 100);
             }
         });
@@ -126,14 +135,32 @@ public class MainActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.flashcard_answer)).setText((answer));
         }*/
 
-        if (resultCode == RESULT_OK) {
 
+
+        if (resultCode == RESULT_OK) {
             String question = data.getExtras().getString("string1"); // 'string1' needs to match the key we used when we put the string in the Intent
             String answer = data.getExtras().getString("string2");
+            String w_answer1 = data.getExtras().getString("string3");
+            String w_answer2 = data.getExtras().getString("string4");
+
+            Snackbar.make(findViewById(R.id.flashcard_question),
+                    "Card successfully created!",
+                    Snackbar.LENGTH_SHORT)
+                    .show();
 
             ((TextView) findViewById(R.id.flashcard_question)).setText((question));
             ((TextView) findViewById(R.id.flashcard_answer)).setText((answer));
+            ((TextView) findViewById(R.id.flashcard_answer1)).setText((w_answer1));
+            ((TextView) findViewById(R.id.flashcard_answer2)).setText((w_answer2));
+            ((TextView) findViewById(R.id.flashcard_correctAnswer)).setText((answer));
+
+
+
         }
+
+
+
+
 
 
 
