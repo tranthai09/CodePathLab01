@@ -7,7 +7,8 @@
 Basic flashcard app where the user can flip the flash card back and forth to reveal and hide the answer to a question. The user can also choose between three answer choices and quiz themselves on the question as well as toggle between showing and hiding the answer choices. When the user clicks on the correct answer, it will turn green. If the user clicks on the wrong answer, the correct answer will turn green and the user's answer will turn red. 
 
 ### App Walk-though
-<img src="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gif" width=200><br>
+<img src="https://github.com/tranthai09/CodePathLab01/blob/master/Lab01.gif" width=200>
+<img src="https://github.com/tranthai09/CodePathLab01/blob/master/Lab02.gif" width=200><br>
 
 ## Required
 Lab 01:
