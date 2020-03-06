@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 findViewById(R.id.flashcard_answer1).setBackgroundColor(getResources().getColor(R.color.red));
-                findViewById(R.id.flashcard_correctAnswer).setBackgroundColor(getResources().getColor(R.color.lightGreen));
             }
         });
 
@@ -47,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 findViewById(R.id.flashcard_answer2).setBackgroundColor(getResources().getColor(R.color.red));
-                findViewById(R.id.flashcard_correctAnswer).setBackgroundColor(getResources().getColor(R.color.lightGreen));
             }
         });
 

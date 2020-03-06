@@ -7,6 +7,10 @@
     <color name="peach">#fdd3c9</color>
     <color name="lightGreen">#bada55</color>
     <color name="purple">#6c78d8</color>
-    <color name="lavendar">#e6e6fa</color>
+    <color name="lavender">#e6e6fa</color>
     <color name="pastelGreen">#dcedc1</color>
+    <color name="pastelBlue">#cffdf8</color>
+    <color name="blueGreen">#d3ffce</color>
+    <color name="pastelPink">#ffe5e2</color>
+
 </resources>
