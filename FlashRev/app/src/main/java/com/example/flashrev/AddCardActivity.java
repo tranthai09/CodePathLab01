@@ -6,8 +6,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AddCardActivity extends AppCompatActivity {
@@ -25,6 +23,7 @@ public class AddCardActivity extends AppCompatActivity {
             }
         });
 
+
         findViewById(R.id.saveBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,13 +32,18 @@ public class AddCardActivity extends AppCompatActivity {
                 String wrong_answer1 = ((EditText) findViewById(R.id.Template_wrongAns1)).getText().toString();
                 String wrong_answer2 = ((EditText) findViewById(R.id.Template_wrongAns2)).getText().toString();
 
-                if (answer == null && question == null) {
+                /*if (question.isEmpty() || answer.isEmpty() || wrong_answer1.isEmpty() || wrong_answer2.isEmpty()) {
                     Snackbar.make(findViewById(R.id.flashcard_question),
                             "Must enter both question and answer!",
                             Snackbar.LENGTH_SHORT)
                             .show();
                 }
-
+                else {
+                    Snackbar.make(findViewById(R.id.flashcard_question),
+                            "Not working!",
+                            Snackbar.LENGTH_SHORT)
+                            .show();
+                }*/
                 Intent data = new Intent(); // create a new Intent, this is where we will put our data
                 data.putExtra("string1", question); // puts one string into the Intent, with the key as 'string1'
                 data.putExtra("string2", answer); // puts another string into the Intent, with the key as 'string2
@@ -49,9 +53,9 @@ public class AddCardActivity extends AppCompatActivity {
                 finish(); // closes this activity and pass data to the original activity that launched this activity
 
 
+
             }
         });
-
         String q = getIntent().getStringExtra("stringKey1"); // this string will be 'harry potter`
         String a1 = getIntent().getStringExtra("stringKey2"); // this string will be 'voldemort'
         String a2 = getIntent().getStringExtra("stringKey3"); // this string will be 'voldemort'
