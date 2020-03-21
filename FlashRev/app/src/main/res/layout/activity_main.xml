@@ -11,7 +11,7 @@
         android:id="@+id/flashcard_question"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentTop="false"
         android:background="@drawable/card_background"
         android:elevation="5dp"
         android:gravity="center"
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentTop="false"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="-4dp"
         android:layout_marginTop="-4dp"
@@ -120,6 +120,30 @@
         android:layout_marginTop="203dp"
         android:layout_marginEnd="12dp"
         app:srcCompat="@drawable/next_icon" />
+
+    <ImageView
+        android:id="@+id/trashBtn"
+        android:layout_width="48dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="206dp"
+        app:srcCompat="@drawable/trash_icon" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="184dp"
+        android:text="time"
+        android:textColor="#ee0000"
+        android:textSize="40sp" />
 
 
 </RelativeLayout>
